@@ -1,0 +1,155 @@
+.TrollboxContainer * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.TrollboxContainer {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  max-width: 600px;
+  color: #000;
+  background: #fff;
+}
+
+.TrollboxHeader {
+  font-size: 1em;
+  font-weight: bold;
+  padding-bottom: 0.2em;
+}
+
+.TrollboxMessages {
+  display: block;
+  width: 100%;
+  height: 350px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 1px solid #000;
+}
+
+.TrollboxMessagesNotVerified {
+  display: block;
+  width: 100%;
+  border: 1px solid #000;
+  border-bottom: none;
+  padding: 0.2rem;
+  padding-left: 1rem;
+  background: lightgray;
+}
+
+.TrollboxMessagesList {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.TrollboxMessagesList li {
+  line-height: 1.2;
+}
+
+.TrollboxMessage {
+  display: block;
+  width: 100%;
+}
+
+.TrollboxForm {
+  padding-top: 0.2em;
+  display: block;
+  width: 100%;
+}
+
+.TrollboxInput {
+  display: block;
+  width: 100%;
+}
+
+.TrollboxInputTextDiv {
+  display: inline-block;
+  width: 93%;
+}
+
+.TrollboxInputText {
+  border: 1px solid #000;
+  width: 100%;
+  padding: 0.3em;
+  font-size: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.TrollboxInputButton {
+  display: inline-block;
+  width: 6%;
+  font-size: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.TrollboxInputText:focus {
+  outline: 0;
+}
+
+.TrollboxMessagesLine {
+  width: 100%;
+}
+
+.TrollboxMessagesLineTitle {
+  font-weight: bold;
+}
+
+.TrollboxMessagesLineMarkIcon > svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.TrollboxMessagesLineMarkUnknown > span > svg > g > path {
+  fill: black;
+}
+
+.TrollboxMessagesLineMarkFailed > span > svg > g > path {
+  fill: red;
+}
+
+.TrollboxMessagesLineMarkFailed {
+  color: red;
+}
+
+.TrollboxMessagesLineMarkVerified > span > svg > g > path {
+  fill: none;
+}
+
+.TrollboxMessagesLineMarkPending > span > svg > g > path {
+  fill: #154c87;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 2rem;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
