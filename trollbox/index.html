@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>Trollbox</title>
+  <link rel="stylesheet" href="../trollbox.css" />
+</head>
+<body>
+  <div id="trollbox">Connecting to Beet ...</div>
+  <script src="./trollbox.js"></script>
+  <script src="./beet-js.js"></script>
+  <script>
+      function init () {
+          const config = {
+              container: '#trollbox',
+              firebase: {
+                  apiKey: 'AIzaSyCbU0lppDUcRjkGzIkpPlzaWaTghz_0WoE',
+                  authDomain: 'beet-trollbox.firebaseapp.com',
+                  databaseURL: 'https://beet-trollbox.firebaseio.com/',
+                  projectId: 'beet-trollbox',
+                  storageBucket: 'beet-trollbox.appspot.com',
+                  messagingSenderId: '363824724794'
+              },
+              channel: 'examples.get-beet.io/trollbox',
+              user: null,
+              delayRender: false
+          };
+          let trollbox = new window.Trollbox(config);
+          beet.get('Beet Trollbox', 'ANY').then(app => {
+              trollbox.setUser(app.ANY.getAccount().name, app.ANY);
+          });
+      }
+      init();
+  </script>
+</body>
+</html>
