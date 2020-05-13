@@ -243,6 +243,7 @@ class Trollbox {
          case "WLS":
             chain = `<span class="TrollboxMessagesLineMarkIcon">${this._getWhaleSharesLogo()}</span>`;
             break;
+         case "STEEM":
          case "STM":
             chain = `<span class="TrollboxMessagesLineMarkIcon">${this._getSteemLogo()}</span>`;
             break;
