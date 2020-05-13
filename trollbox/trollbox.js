@@ -240,9 +240,6 @@ class Trollbox {
          case "BTS":
             chain = `<span class="TrollboxMessagesLineMarkIcon">${this._getBitsharesLogo()}</span>`;
             break;
-         case "BTS_TEST":
-            chain = `<span class="TrollboxMessagesLineMarkIcon">${this._getBitsharesLogo()}</span>`;
-            break;
          case "WLS":
             chain = `<span class="TrollboxMessagesLineMarkIcon">${this._getWhaleSharesLogo()}</span>`;
             break;

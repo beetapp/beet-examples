@@ -27,6 +27,7 @@
               delayRender: false
           };
           let trollbox = new window.Trollbox(config);
+          beet.allowLocalhostFallback();
           beet.get('Beet Trollbox', 'ANY').then(app => {
               trollbox.setUser(app.ANY.getAccount().name, app.ANY);
           });
